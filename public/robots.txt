@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://osh-hassan.com/sitemap.xml
