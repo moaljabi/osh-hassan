@@ -14,7 +14,7 @@ function BrandLockup({footer=false}:{footer?:boolean}) {
 
 export function SiteShell({children}:{children:React.ReactNode}) {
   return <>
-    <div className="topbar"><div className="container topbar-inner"><span>شراكة متكاملة في التصنيع والتوريد الزراعي والصناعي</span><span><a href="mailto:engineering@osh-hassan.com">الهندسة والتصنيع</a><i /><a href="mailto:sales@osh-hassan.com">المبيعات والتوريد</a><i /><span>دمشق — سوريا</span></span></div></div>
+    <div className="topbar"><div className="container topbar-inner"><span>شراكة متكاملة في التصنيع والتوريد الزراعي والصناعي</span><span><a href="mailto:factory@osh-hassan.com">الهندسة والتصنيع</a><i /><a href="mailto:sales@osh-hassan.com">المبيعات والتوريد</a><i /><span>دمشق — سوريا</span></span></div></div>
     <header className="site-header">
       <div className="container nav-wrap">
         <a className="brand" href="/" aria-label="الحسن للصناعات الهندسية وأسامة هيكل للتجارة والتوريدات — الرئيسية"><BrandLockup /></a>
@@ -28,8 +28,8 @@ export function SiteShell({children}:{children:React.ReactNode}) {
       <div className="container footer-grid partnership-footer">
         <div><a className="brand brand-footer" href="/"><BrandLockup footer /></a><h3 className="footer-partnership-title">الحسن للصناعات الهندسية &amp; أسامة هيكل للتجارة والتوريدات</h3><p>شراكة متكاملة في التصنيع والتوريد الزراعي والصناعي، تجمع خبرة المصنع بكفاءة المبيعات وخدمة العملاء.</p></div>
         <div><h3>روابط سريعة</h3>{nav.slice(1).map(([href,label])=><a href={href} key={href}>{label}</a>)}</div>
-        <div><h3>المبيعات والتوريد</h3><span>أسامة هيكل للتجارة والتوريدات</span><a href="tel:00963943990777" dir="ltr">00963 943 990 777</a><a href="mailto:sales@osh-hassan.com" dir="ltr">sales@osh-hassan.com</a></div>
-        <div><h3>الهندسة والتصنيع</h3><span>شركة الحسن — إسماعيل حورية</span><a href="tel:00963937171347" dir="ltr">00963 937 171 347</a><a href="mailto:engineering@osh-hassan.com" dir="ltr">engineering@osh-hassan.com</a></div>
+        <div><h3>المبيعات والتوريد</h3><span>أسامة هيكل للتجارة والتوريدات</span><a href="tel:+963943990777" dir="ltr">+963 943 990 777</a><a href="mailto:sales@osh-hassan.com" dir="ltr">sales@osh-hassan.com</a></div>
+        <div><h3>الهندسة والتصنيع</h3><span>شركة الحسن — إسماعيل حورية</span><a href="tel:+963937171347" dir="ltr">+963 937 171 347</a><a href="mailto:factory@osh-hassan.com" dir="ltr">factory@osh-hassan.com</a></div>
       </div>
       <div className="container footer-bottom"><span>© 2026 الحسن للصناعات الهندسية &amp; أسامة هيكل للتجارة والتوريدات. جميع الحقوق محفوظة.</span><span>دمشق — سوريا · osh-hassan.com</span></div>
     </footer>
