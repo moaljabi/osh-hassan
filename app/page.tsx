@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { SiteShell, ContactBand } from "./site-shell";
 import { products } from "./site-data";
 
@@ -14,7 +13,7 @@ export default function Home() {
             <h1>حلول هندسية متطورة<br />لخدمة الزراعة</h1>
             <p>نوفر معدات وآلات زراعية عملية تجمع بين متانة التصنيع، كفاءة الأداء، وسهولة التشغيل — بصفتنا وكيلاً لمنتجات الحسن للصناعات الهندسية.</p>
             <div className="hero-actions">
-              <Link className="button primary" href="/products">استكشف منتجاتنا <span>←</span></Link>
+              <a className="button primary" href="/products">استكشف منتجاتنا <span>←</span></a>
               <a className="button glass" href="https://wa.me/963943990777">تحدث معنا عبر واتساب</a>
             </div>
           </div>
@@ -29,7 +28,7 @@ export default function Home() {
             </div>
             <div className="intro-copy">
               <p>نساعد المزارعين والمؤسسات والمشاريع الزراعية على رفع كفاءة العمليات وتقليل الجهد والاستفادة الأفضل من الموارد، عبر حلول تغطي البذار وتجهيز الأعلاف ومعالجة المخلفات والنقل الزراعي.</p>
-              <Link className="text-link" href="/about">تعرّف إلى المؤسسة <span>←</span></Link>
+              <a className="text-link" href="/about">تعرّف إلى المؤسسة <span>←</span></a>
             </div>
           </div>
         </section>
@@ -38,13 +37,13 @@ export default function Home() {
           <div className="container">
             <div className="section-heading">
               <div><span className="eyebrow">منتجات مختارة</span><h2>حلول للزراعة والتجهيز</h2></div>
-              <Link className="button outline" href="/products">عرض جميع المنتجات</Link>
+              <a className="button outline" href="/products">عرض جميع المنتجات</a>
             </div>
             <div className="featured-grid">
               {products.slice(0, 4).map((p, i) => (
                 <article className={`product-tile ${i === 0 ? "wide" : ""}`} key={p.code}>
                   <img src={p.image} alt={p.name} />
-                  <div className="tile-content"><small>{p.code}</small><h3>{p.name}</h3><p>{p.tagline}</p><Link href={`/products#p-${p.code}`} aria-label={`تفاصيل ${p.name}`}>التفاصيل <span>←</span></Link></div>
+                  <div className="tile-content"><small>{p.code}</small><h3>{p.name}</h3><p>{p.tagline}</p><a href={`/products#p-${p.code}`} aria-label={`تفاصيل ${p.name}`}>التفاصيل <span>←</span></a></div>
                 </article>
               ))}
             </div>
@@ -66,7 +65,7 @@ export default function Home() {
         </section>
 
         <section className="section services-strip">
-          <div className="container section-heading"><div><span className="eyebrow">خدماتنا</span><h2>من التوريد إلى التشغيل</h2></div><Link className="text-link" href="/services">كل الخدمات والخبرات <span>←</span></Link></div>
+          <div className="container section-heading"><div><span className="eyebrow">خدماتنا</span><h2>من التوريد إلى التشغيل</h2></div><a className="text-link" href="/services">كل الخدمات والخبرات <span>←</span></a></div>
           <div className="container service-cards">
             {["تصميم وتصنيع المعدات حسب الطلب", "التركيب والتشغيل والتدريب", "الصيانة والدعم الفني"].map((s,i)=><article key={s}><b>0{i+1}</b><h3>{s}</h3></article>)}
           </div>
